@@ -1,7 +1,7 @@
 {
  "id": "assumption-d2c-ads",
  "title": "D2C brands fail because of ads (offline placeholder)",
- "generated_at": "2026-09-29T07:43:30+00:00",
+ "generated_at": "2026-09-29T07:49:04+00:00",
  "llm_provider": "fake",
  "retrieval_provider": "fake",
  "events": [
@@ -15,7 +15,7 @@
     "stage": "premise",
     "input_type": "assumption"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 2,
@@ -25,7 +25,7 @@
     "message": "Classified as assumption",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 3,
@@ -35,7 +35,7 @@
     "message": "Planning broad queries",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 4,
@@ -45,7 +45,7 @@
     "message": "Searching: D2C brands fail because of ads | D2C brands fail because of ads statistics | evidence against D2C brands fail because of ads | D2C brands fail because of ads study",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 5,
@@ -55,7 +55,7 @@
     "message": "Retrieved 12 new sources (0 source errors)",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 6,
@@ -65,7 +65,7 @@
     "message": "Round 1: arguing the bull side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 7,
@@ -79,7 +79,7 @@
     "agent": "bull",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 8,
@@ -90,7 +90,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 9,
@@ -101,13 +101,14 @@
     "label": "A 2025 official statistics release on D2C brands fail because of ads reports figures consistent with the claim.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 official statistics release on D2C brands fail because of ads reports figures consistent with the claim.",
     "url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-0",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 10,
@@ -118,7 +119,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 11,
@@ -129,13 +130,14 @@
     "label": "An undated forum summary on D2C brands fail because of ads repeats the claim without data.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on D2C brands fail because of ads repeats the claim without data.",
     "url": "https://offline.invalid/unknown/d2c-brands-fail-because-of-ads-1",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 12,
@@ -146,7 +148,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 13,
@@ -157,13 +159,14 @@
     "label": "A 2025 official statistics release on D2C brands fail because of ads reports figures consistent with the claim and grew 43% last year.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 official statistics release on D2C brands fail because of ads reports figures consistent with the claim.",
     "url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-0",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 14,
@@ -174,7 +177,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 15,
@@ -188,7 +191,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 16,
@@ -198,7 +201,7 @@
     "message": "Round 1: arguing the bear side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 17,
@@ -212,7 +215,7 @@
     "agent": "bear",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 18,
@@ -223,7 +226,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 19,
@@ -234,7 +237,7 @@
     "target": "arg-1",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 20,
@@ -245,13 +248,14 @@
     "label": "A 2025 academic study of D2C brands fail because of ads finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of D2C brands fail because of ads finds evidence against the claim.",
     "url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-2",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 21,
@@ -262,7 +266,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 22,
@@ -273,13 +277,14 @@
     "label": "A 2024 industry report on D2C brands fail because of ads statistics finds the claim does not hold in most markets.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 industry report on D2C brands fail because of ads statistics finds the claim does not hold in most markets.",
     "url": "https://offline.invalid/news/d2c-brands-fail-because-of-ads-statistic-0",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads statistics"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 23,
@@ -290,7 +295,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 24,
@@ -301,13 +306,14 @@
     "label": "A 2024 industry report on D2C brands fail because of ads statistics finds the claim does not hold in most markets.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 industry report on D2C brands fail because of ads statistics finds the claim does not hold in most markets.",
     "url": "https://offline.invalid/news/d2c-brands-fail-because-of-ads-statistic-1",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads statistics"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 25,
@@ -318,7 +324,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 26,
@@ -332,7 +338,7 @@
     "stage": "premise",
     "side_now": "bear"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 27,
@@ -342,7 +348,7 @@
     "message": "Planning gap queries",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 28,
@@ -352,7 +358,7 @@
     "message": "Searching: D2C brands fail because of ads latest data",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 29,
@@ -362,7 +368,7 @@
     "message": "Retrieved 3 new sources (0 source errors)",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 30,
@@ -372,7 +378,7 @@
     "message": "Round 2: arguing the bull side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 31,
@@ -386,7 +392,7 @@
     "agent": "bull",
     "round": 2
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 32,
@@ -397,7 +403,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 33,
@@ -408,7 +414,7 @@
     "target": "arg-2",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 34,
@@ -419,13 +425,14 @@
     "label": "A 2024 news analysis of evidence against D2C brands fail because of ads finds support for the claim.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 news analysis of evidence against D2C brands fail because of ads finds support for the claim.",
     "url": "https://offline.invalid/news/evidence-against-d2c-brands-fail-because-0",
     "title": "[FAKE OFFLINE SOURCE] evidence against D2C brands fail because of ads"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 35,
@@ -436,7 +443,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 36,
@@ -447,13 +454,14 @@
     "label": "An undated forum summary on evidence against D2C brands fail because of ads repeats the claim without data.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on evidence against D2C brands fail because of ads repeats the claim without data.",
     "url": "https://offline.invalid/unknown/evidence-against-d2c-brands-fail-because-2",
     "title": "[FAKE OFFLINE SOURCE] evidence against D2C brands fail because of ads"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 37,
@@ -464,7 +472,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 38,
@@ -475,13 +483,14 @@
     "label": "An undated forum summary on D2C brands fail because of ads study repeats the claim without data.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on D2C brands fail because of ads study repeats the claim without data.",
     "url": "https://offline.invalid/unknown/d2c-brands-fail-because-of-ads-study-1",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads study"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 39,
@@ -492,7 +501,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 40,
@@ -506,7 +515,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 41,
@@ -516,7 +525,7 @@
     "message": "Round 2: arguing the bear side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 42,
@@ -530,7 +539,7 @@
     "agent": "bear",
     "round": 2
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 43,
@@ -541,7 +550,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 44,
@@ -552,7 +561,7 @@
     "target": "arg-3",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 45,
@@ -563,13 +572,14 @@
     "label": "A 2024 industry report on evidence against D2C brands fail because of ads finds the claim does not hold in most markets.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 industry report on evidence against D2C brands fail because of ads finds the claim does not hold in most markets.",
     "url": "https://offline.invalid/news/evidence-against-d2c-brands-fail-because-1",
     "title": "[FAKE OFFLINE SOURCE] evidence against D2C brands fail because of ads"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 46,
@@ -580,7 +590,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 47,
@@ -591,13 +601,14 @@
     "label": "A 2025 academic study of D2C brands fail because of ads study finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of D2C brands fail because of ads study finds evidence against the claim.",
     "url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-study-0",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads study"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 48,
@@ -608,7 +619,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 49,
@@ -619,13 +630,14 @@
     "label": "A 2019 company blog post on D2C brands fail because of ads study argues the opposite of the common assumption.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on D2C brands fail because of ads study argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/d2c-brands-fail-because-of-ads-study-2",
     "title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads study"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 50,
@@ -636,7 +648,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 51,
@@ -650,7 +662,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 52,
@@ -661,7 +673,7 @@
     "target": "claim",
     "kind": "stance"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 53,
@@ -671,7 +683,7 @@
     "message": "Checking 12 quotes against their claims",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 54,
@@ -682,7 +694,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 55,
@@ -693,7 +705,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 56,
@@ -704,7 +716,7 @@
     "status": "UNVERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 57,
@@ -715,7 +727,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 58,
@@ -726,7 +738,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 59,
@@ -737,7 +749,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 60,
@@ -748,7 +760,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 61,
@@ -759,7 +771,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 62,
@@ -770,7 +782,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 63,
@@ -781,7 +793,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 64,
@@ -792,7 +804,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 65,
@@ -803,7 +815,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 66,
@@ -813,7 +825,7 @@
     "message": "Scoring verified evidence",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 67,
@@ -824,7 +836,7 @@
     "label": "Premise: INCONCLUSIVE",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 68,
@@ -846,7 +858,7 @@
      "override": false
     }
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 69,
@@ -857,7 +869,7 @@
     "target": "verdict-premise",
     "kind": "verdict"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 70,
@@ -867,7 +879,7 @@
     "message": "Writing the final report",
     "stage": "final"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   }
  ],
  "report": {
@@ -895,7 +907,7 @@
     "source_url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-0",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads",
     "retrieved_quote": "A 2025 official statistics release on D2C brands fail because of ads reports figures consistent with the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -908,7 +920,7 @@
     "source_url": "https://offline.invalid/unknown/d2c-brands-fail-because-of-ads-1",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads",
     "retrieved_quote": "An undated forum summary on D2C brands fail because of ads repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -921,7 +933,7 @@
     "source_url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-0",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads",
     "retrieved_quote": "A 2025 official statistics release on D2C brands fail because of ads reports figures consistent with the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "mismatched",
     "status": "UNVERIFIED",
     "source_tier": null,
@@ -934,7 +946,7 @@
     "source_url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-2",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads",
     "retrieved_quote": "A 2025 academic study of D2C brands fail because of ads finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -947,7 +959,7 @@
     "source_url": "https://offline.invalid/news/d2c-brands-fail-because-of-ads-statistic-0",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads statistics",
     "retrieved_quote": "A 2024 industry report on D2C brands fail because of ads statistics finds the claim does not hold in most markets.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -960,7 +972,7 @@
     "source_url": "https://offline.invalid/news/d2c-brands-fail-because-of-ads-statistic-1",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads statistics",
     "retrieved_quote": "A 2024 industry report on D2C brands fail because of ads statistics finds the claim does not hold in most markets.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -973,7 +985,7 @@
     "source_url": "https://offline.invalid/news/evidence-against-d2c-brands-fail-because-0",
     "source_title": "[FAKE OFFLINE SOURCE] evidence against D2C brands fail because of ads",
     "retrieved_quote": "A 2024 news analysis of evidence against D2C brands fail because of ads finds support for the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -986,7 +998,7 @@
     "source_url": "https://offline.invalid/unknown/evidence-against-d2c-brands-fail-because-2",
     "source_title": "[FAKE OFFLINE SOURCE] evidence against D2C brands fail because of ads",
     "retrieved_quote": "An undated forum summary on evidence against D2C brands fail because of ads repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -999,7 +1011,7 @@
     "source_url": "https://offline.invalid/unknown/d2c-brands-fail-because-of-ads-study-1",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads study",
     "retrieved_quote": "An undated forum summary on D2C brands fail because of ads study repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -1012,7 +1024,7 @@
     "source_url": "https://offline.invalid/news/evidence-against-d2c-brands-fail-because-1",
     "source_title": "[FAKE OFFLINE SOURCE] evidence against D2C brands fail because of ads",
     "retrieved_quote": "A 2024 industry report on evidence against D2C brands fail because of ads finds the claim does not hold in most markets.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -1025,7 +1037,7 @@
     "source_url": "https://offline.invalid/gov/d2c-brands-fail-because-of-ads-study-0",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads study",
     "retrieved_quote": "A 2025 academic study of D2C brands fail because of ads study finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -1038,7 +1050,7 @@
     "source_url": "https://offline.invalid/blog/d2c-brands-fail-because-of-ads-study-2",
     "source_title": "[FAKE OFFLINE SOURCE] D2C brands fail because of ads study",
     "retrieved_quote": "A 2019 company blog post on D2C brands fail because of ads study argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,

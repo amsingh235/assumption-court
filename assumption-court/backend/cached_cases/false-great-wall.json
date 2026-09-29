@@ -1,7 +1,7 @@
 {
  "id": "false-great-wall",
  "title": "The Great Wall of China is visible from the Moon with the naked eye (offline placeholder)",
- "generated_at": "2026-09-29T07:43:30+00:00",
+ "generated_at": "2026-09-29T07:49:04+00:00",
  "llm_provider": "fake",
  "retrieval_provider": "fake",
  "events": [
@@ -15,7 +15,7 @@
     "stage": "premise",
     "input_type": "assumption"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 2,
@@ -25,7 +25,7 @@
     "message": "Classified as assumption",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 3,
@@ -35,7 +35,7 @@
     "message": "Planning broad queries",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 4,
@@ -45,7 +45,7 @@
     "message": "Searching: The Great Wall of China is visible from the Moon with the naked eye | The Great Wall of China is visible from the Moon with the naked eye statistics | evidence against The Great Wall of China is visible from the Moon with the naked eye | The Great Wall of China is visible from the Moon with the naked eye study",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 5,
@@ -55,7 +55,7 @@
     "message": "Retrieved 10 new sources (0 source errors)",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 6,
@@ -65,7 +65,7 @@
     "message": "Round 1: arguing the bull side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 7,
@@ -79,7 +79,7 @@
     "agent": "bull",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 8,
@@ -90,7 +90,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 9,
@@ -101,13 +101,14 @@
     "label": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
     "url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 10,
@@ -118,7 +119,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 11,
@@ -129,13 +130,14 @@
     "label": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
     "url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 12,
@@ -146,7 +148,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 13,
@@ -157,13 +159,14 @@
     "label": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data and grew 43% last year.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
     "url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 14,
@@ -174,7 +177,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 15,
@@ -188,7 +191,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 16,
@@ -198,7 +201,7 @@
     "message": "Round 1: arguing the bear side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 17,
@@ -212,7 +215,7 @@
     "agent": "bear",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 18,
@@ -223,7 +226,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 19,
@@ -234,7 +237,7 @@
     "target": "arg-1",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 20,
@@ -245,13 +248,14 @@
     "label": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye argues the opposite of the common assumption.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--0",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 21,
@@ -262,7 +266,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 22,
@@ -273,13 +277,14 @@
     "label": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--1",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 23,
@@ -290,7 +295,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 24,
@@ -301,13 +306,14 @@
     "label": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--2",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 25,
@@ -318,7 +324,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 26,
@@ -332,7 +338,7 @@
     "stage": "premise",
     "side_now": "bear"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 27,
@@ -342,7 +348,7 @@
     "message": "Planning gap queries",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 28,
@@ -352,7 +358,7 @@
     "message": "Searching: The Great Wall of China is visible from the Moon with the naked eye latest data",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 29,
@@ -362,7 +368,7 @@
     "message": "Retrieved 2 new sources (0 source errors)",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 30,
@@ -372,7 +378,7 @@
     "message": "Round 2: arguing the bull side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 31,
@@ -386,7 +392,7 @@
     "agent": "bull",
     "round": 2
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 32,
@@ -397,7 +403,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 33,
@@ -408,7 +414,7 @@
     "target": "arg-2",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 34,
@@ -419,13 +425,14 @@
     "label": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
     "url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 35,
@@ -436,7 +443,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 36,
@@ -447,13 +454,14 @@
     "label": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
     "url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 37,
@@ -464,7 +472,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 38,
@@ -478,7 +486,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 39,
@@ -489,7 +497,7 @@
     "target": "claim",
     "kind": "stance"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 40,
@@ -499,7 +507,7 @@
     "message": "Round 2: arguing the bear side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 41,
@@ -513,7 +521,7 @@
     "agent": "bear",
     "round": 2
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 42,
@@ -524,7 +532,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 43,
@@ -535,7 +543,7 @@
     "target": "arg-3",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 44,
@@ -546,13 +554,14 @@
     "label": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye statistics argues the opposite of the common assumption.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye statistics argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--2",
     "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 45,
@@ -563,7 +572,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 46,
@@ -574,13 +583,14 @@
     "label": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-0",
     "title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 47,
@@ -591,7 +601,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 48,
@@ -602,13 +612,14 @@
     "label": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
     "url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-1",
     "title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 49,
@@ -619,7 +630,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 50,
@@ -633,7 +644,7 @@
     "stage": "premise",
     "side_now": "bear"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 51,
@@ -643,7 +654,7 @@
     "message": "Checking 11 quotes against their claims",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 52,
@@ -654,7 +665,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 53,
@@ -665,7 +676,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 54,
@@ -676,7 +687,7 @@
     "status": "UNVERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 55,
@@ -687,7 +698,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 56,
@@ -698,7 +709,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 57,
@@ -709,7 +720,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 58,
@@ -720,7 +731,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 59,
@@ -731,7 +742,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 60,
@@ -742,7 +753,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 61,
@@ -753,7 +764,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 62,
@@ -764,7 +775,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 63,
@@ -774,7 +785,7 @@
     "message": "Scoring verified evidence",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 64,
@@ -784,7 +795,7 @@
     "message": "Anti-neutral rule: re-prompting the Judge once",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 65,
@@ -795,7 +806,7 @@
     "label": "Premise: REFUTED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 66,
@@ -817,7 +828,7 @@
      "override": false
     }
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 67,
@@ -828,7 +839,7 @@
     "target": "verdict-premise",
     "kind": "verdict"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 68,
@@ -838,7 +849,7 @@
     "message": "Writing the final report",
     "stage": "final"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   }
  ],
  "report": {
@@ -866,7 +877,7 @@
     "source_url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -879,7 +890,7 @@
     "source_url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -892,7 +903,7 @@
     "source_url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "mismatched",
     "status": "UNVERIFIED",
     "source_tier": null,
@@ -905,7 +916,7 @@
     "source_url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--0",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -918,7 +929,7 @@
     "source_url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--1",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -931,7 +942,7 @@
     "source_url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--2",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -944,7 +955,7 @@
     "source_url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -957,7 +968,7 @@
     "source_url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -970,7 +981,7 @@
     "source_url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--2",
     "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
     "retrieved_quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye statistics argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -983,7 +994,7 @@
     "source_url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-0",
     "source_title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the",
     "retrieved_quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -996,7 +1007,7 @@
     "source_url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-1",
     "source_title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the",
     "retrieved_quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,

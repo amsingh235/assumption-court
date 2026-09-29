@@ -80,7 +80,7 @@ def run_debate(
                 arg.evidence_ids.append(ev.id)
                 evidence.append(ev)
                 by_id[ev.id] = ev
-                trial.events.evidence_node(ev, stage)
+                trial.events.evidence_node(ev, stage, round_no)
                 trial.events.edge(ev.id, arg.id, "supports")
             arguments.append(arg)
             last[agent] = arg

@@ -1,7 +1,7 @@
 {
  "id": "why-d2c-fail",
  "title": "Why do most D2C brands fail? (offline placeholder)",
- "generated_at": "2026-09-29T07:43:30+00:00",
+ "generated_at": "2026-09-29T07:49:04+00:00",
  "llm_provider": "fake",
  "retrieval_provider": "fake",
  "events": [
@@ -15,7 +15,7 @@
     "stage": "premise",
     "input_type": "why-question"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 2,
@@ -25,7 +25,7 @@
     "message": "Classified as why-question",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 3,
@@ -35,7 +35,7 @@
     "message": "Planning broad queries",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 4,
@@ -45,7 +45,7 @@
     "message": "Searching: Most D2C brands fail | Most D2C brands fail statistics | evidence against Most D2C brands fail | Most D2C brands fail study",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 5,
@@ -55,7 +55,7 @@
     "message": "Retrieved 12 new sources (0 source errors)",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 6,
@@ -65,7 +65,7 @@
     "message": "Round 1: arguing the bull side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 7,
@@ -79,7 +79,7 @@
     "agent": "bull",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 8,
@@ -90,7 +90,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 9,
@@ -101,13 +101,14 @@
     "label": "A 2025 official statistics release on Most D2C brands fail statistics reports figures consistent with the claim.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 official statistics release on Most D2C brands fail statistics reports figures consistent with the claim.",
     "url": "https://offline.invalid/gov/most-d2c-brands-fail-statistics-0",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 10,
@@ -118,7 +119,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 11,
@@ -129,13 +130,14 @@
     "label": "An undated forum summary on Most D2C brands fail statistics repeats the claim without data.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on Most D2C brands fail statistics repeats the claim without data.",
     "url": "https://offline.invalid/unknown/most-d2c-brands-fail-statistics-2",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 12,
@@ -146,7 +148,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 13,
@@ -157,13 +159,14 @@
     "label": "A 2025 official statistics release on Most D2C brands fail statistics reports figures consistent with the claim and grew 43% last year.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 official statistics release on Most D2C brands fail statistics reports figures consistent with the claim.",
     "url": "https://offline.invalid/gov/most-d2c-brands-fail-statistics-0",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 14,
@@ -174,7 +177,7 @@
     "target": "arg-1",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 15,
@@ -188,7 +191,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 16,
@@ -198,7 +201,7 @@
     "message": "Round 1: arguing the bear side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 17,
@@ -212,7 +215,7 @@
     "agent": "bear",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 18,
@@ -223,7 +226,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 19,
@@ -234,7 +237,7 @@
     "target": "arg-1",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 20,
@@ -245,13 +248,14 @@
     "label": "A 2025 academic study of Most D2C brands fail finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of Most D2C brands fail finds evidence against the claim.",
     "url": "https://offline.invalid/gov/most-d2c-brands-fail-0",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 21,
@@ -262,7 +266,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 22,
@@ -273,13 +277,14 @@
     "label": "A 2025 academic study of Most D2C brands fail finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of Most D2C brands fail finds evidence against the claim.",
     "url": "https://offline.invalid/gov/most-d2c-brands-fail-1",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 23,
@@ -290,7 +295,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 24,
@@ -301,13 +306,14 @@
     "label": "A 2019 company blog post on Most D2C brands fail argues the opposite of the common assumption.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on Most D2C brands fail argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/most-d2c-brands-fail-2",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 25,
@@ -318,7 +324,7 @@
     "target": "arg-2",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 26,
@@ -332,7 +338,7 @@
     "stage": "premise",
     "side_now": "bear"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 27,
@@ -342,7 +348,7 @@
     "message": "Planning gap queries",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 28,
@@ -352,7 +358,7 @@
     "message": "Searching: Most D2C brands fail latest data",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 29,
@@ -362,7 +368,7 @@
     "message": "Retrieved 3 new sources (0 source errors)",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 30,
@@ -372,7 +378,7 @@
     "message": "Round 2: arguing the bull side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 31,
@@ -386,7 +392,7 @@
     "agent": "bull",
     "round": 2
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 32,
@@ -397,7 +403,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 33,
@@ -408,7 +414,7 @@
     "target": "arg-2",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 34,
@@ -419,13 +425,14 @@
     "label": "A 2024 news analysis of evidence against Most D2C brands fail finds support for the claim.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 news analysis of evidence against Most D2C brands fail finds support for the claim.",
     "url": "https://offline.invalid/news/evidence-against-most-d2c-brands-fail-1",
     "title": "[FAKE OFFLINE SOURCE] evidence against Most D2C brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 35,
@@ -436,7 +443,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 36,
@@ -447,13 +454,14 @@
     "label": "A 2025 official statistics release on evidence against Most D2C brands fail reports figures consistent with the claim.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 official statistics release on evidence against Most D2C brands fail reports figures consistent with the claim.",
     "url": "https://offline.invalid/gov/evidence-against-most-d2c-brands-fail-2",
     "title": "[FAKE OFFLINE SOURCE] evidence against Most D2C brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 37,
@@ -464,7 +472,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 38,
@@ -475,13 +483,14 @@
     "label": "An undated forum summary on Most D2C brands fail study repeats the claim without data.",
     "stage": "premise",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on Most D2C brands fail study repeats the claim without data.",
     "url": "https://offline.invalid/unknown/most-d2c-brands-fail-study-1",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail study"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 39,
@@ -492,7 +501,7 @@
     "target": "arg-3",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 40,
@@ -506,7 +515,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 41,
@@ -516,7 +525,7 @@
     "message": "Round 2: arguing the bear side",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 42,
@@ -530,7 +539,7 @@
     "agent": "bear",
     "round": 2
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 43,
@@ -541,7 +550,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 44,
@@ -552,7 +561,7 @@
     "target": "arg-3",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 45,
@@ -563,13 +572,14 @@
     "label": "A 2019 company blog post on Most D2C brands fail statistics argues the opposite of the common assumption.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on Most D2C brands fail statistics argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/most-d2c-brands-fail-statistics-1",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 46,
@@ -580,7 +590,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 47,
@@ -591,13 +601,14 @@
     "label": "A 2025 academic study of Most D2C brands fail study finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of Most D2C brands fail study finds evidence against the claim.",
     "url": "https://offline.invalid/gov/most-d2c-brands-fail-study-0",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail study"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 48,
@@ -608,7 +619,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 49,
@@ -619,13 +630,14 @@
     "label": "A 2025 academic study of Most D2C brands fail latest data finds evidence against the claim.",
     "stage": "premise",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 2,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of Most D2C brands fail latest data finds evidence against the claim.",
     "url": "https://offline.invalid/gov/most-d2c-brands-fail-latest-data-0",
     "title": "[FAKE OFFLINE SOURCE] Most D2C brands fail latest data"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 50,
@@ -636,7 +648,7 @@
     "target": "arg-4",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 51,
@@ -650,7 +662,7 @@
     "stage": "premise",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 52,
@@ -661,7 +673,7 @@
     "target": "claim",
     "kind": "stance"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 53,
@@ -671,7 +683,7 @@
     "message": "Checking 12 quotes against their claims",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 54,
@@ -682,7 +694,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 55,
@@ -693,7 +705,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 56,
@@ -704,7 +716,7 @@
     "status": "UNVERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 57,
@@ -715,7 +727,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 58,
@@ -726,7 +738,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 59,
@@ -737,7 +749,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 60,
@@ -748,7 +760,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 61,
@@ -759,7 +771,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 62,
@@ -770,7 +782,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 63,
@@ -781,7 +793,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 64,
@@ -792,7 +804,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 65,
@@ -803,7 +815,7 @@
     "status": "VERIFIED",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 66,
@@ -813,7 +825,7 @@
     "message": "Scoring verified evidence",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 67,
@@ -824,7 +836,7 @@
     "label": "Premise: INCONCLUSIVE",
     "stage": "premise"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 68,
@@ -846,7 +858,7 @@
      "override": false
     }
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 69,
@@ -857,7 +869,7 @@
     "target": "verdict-premise",
     "kind": "verdict"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 70,
@@ -868,7 +880,7 @@
     "label": "Rising costs explain why most d2c brands fail",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 71,
@@ -879,7 +891,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 72,
@@ -889,7 +901,7 @@
     "message": "Planning cause queries",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 73,
@@ -899,7 +911,7 @@
     "message": "Searching: Rising costs explain why most d2c brands fail | Rising costs explain why most d2c brands fail evidence",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 74,
@@ -909,7 +921,7 @@
     "message": "Retrieved 5 new sources (0 source errors)",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 75,
@@ -919,7 +931,7 @@
     "message": "Round 1: arguing the bull side",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 76,
@@ -933,7 +945,7 @@
     "agent": "bull",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 77,
@@ -944,7 +956,7 @@
     "target": "cause-1",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 78,
@@ -955,13 +967,14 @@
     "label": "An undated forum summary on Rising costs explain why most d2c brands fail repeats the claim without data.",
     "stage": "cause:1",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on Rising costs explain why most d2c brands fail repeats the claim without data.",
     "url": "https://offline.invalid/unknown/rising-costs-explain-why-most-d2c-brands-2",
     "title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 79,
@@ -972,7 +985,7 @@
     "target": "arg-5",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 80,
@@ -983,13 +996,14 @@
     "label": "A 2024 news analysis of Rising costs explain why most d2c brands fail evidence finds support for the claim.",
     "stage": "cause:1",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 news analysis of Rising costs explain why most d2c brands fail evidence finds support for the claim.",
     "url": "https://offline.invalid/news/rising-costs-explain-why-most-d2c-brands-0",
     "title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail evidence"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 81,
@@ -1000,7 +1014,7 @@
     "target": "arg-5",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 82,
@@ -1011,13 +1025,14 @@
     "label": "An undated forum summary on Rising costs explain why most d2c brands fail repeats the claim without data and grew 43% last year.",
     "stage": "cause:1",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on Rising costs explain why most d2c brands fail repeats the claim without data.",
     "url": "https://offline.invalid/unknown/rising-costs-explain-why-most-d2c-brands-2",
     "title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 83,
@@ -1028,7 +1043,7 @@
     "target": "arg-5",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 84,
@@ -1042,7 +1057,7 @@
     "stage": "cause:1",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 85,
@@ -1052,7 +1067,7 @@
     "message": "Round 1: arguing the bear side",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 86,
@@ -1066,7 +1081,7 @@
     "agent": "bear",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 87,
@@ -1077,7 +1092,7 @@
     "target": "cause-1",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 88,
@@ -1088,7 +1103,7 @@
     "target": "arg-5",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 89,
@@ -1099,13 +1114,14 @@
     "label": "A 2019 company blog post on Rising costs explain why most d2c brands fail argues the opposite of the common assumption.",
     "stage": "cause:1",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on Rising costs explain why most d2c brands fail argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/rising-costs-explain-why-most-d2c-brands-0",
     "title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 90,
@@ -1116,7 +1132,7 @@
     "target": "arg-6",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 91,
@@ -1127,13 +1143,14 @@
     "label": "A 2024 industry report on Rising costs explain why most d2c brands fail finds the claim does not hold in most markets.",
     "stage": "cause:1",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 industry report on Rising costs explain why most d2c brands fail finds the claim does not hold in most markets.",
     "url": "https://offline.invalid/news/rising-costs-explain-why-most-d2c-brands-1",
     "title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 92,
@@ -1144,7 +1161,7 @@
     "target": "arg-6",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 93,
@@ -1155,13 +1172,14 @@
     "label": "A 2024 industry report on Rising costs explain why most d2c brands fail evidence finds the claim does not hold in most markets.",
     "stage": "cause:1",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 industry report on Rising costs explain why most d2c brands fail evidence finds the claim does not hold in most markets.",
     "url": "https://offline.invalid/news/rising-costs-explain-why-most-d2c-brands-2",
     "title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail evidence"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 94,
@@ -1172,7 +1190,7 @@
     "target": "arg-6",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 95,
@@ -1186,7 +1204,7 @@
     "stage": "cause:1",
     "side_now": "bear"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 96,
@@ -1196,7 +1214,7 @@
     "message": "Checking 6 quotes against their claims",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 97,
@@ -1207,7 +1225,7 @@
     "status": "VERIFIED",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 98,
@@ -1218,7 +1236,7 @@
     "status": "VERIFIED",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 99,
@@ -1229,7 +1247,7 @@
     "status": "UNVERIFIED",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 100,
@@ -1240,7 +1258,7 @@
     "status": "VERIFIED",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 101,
@@ -1251,7 +1269,7 @@
     "status": "VERIFIED",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 102,
@@ -1262,7 +1280,7 @@
     "status": "VERIFIED",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 103,
@@ -1272,7 +1290,7 @@
     "message": "Scoring verified evidence",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 104,
@@ -1283,7 +1301,7 @@
     "label": "Cause 1: INCONCLUSIVE",
     "stage": "cause:1"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 105,
@@ -1305,7 +1323,7 @@
      "override": false
     }
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 106,
@@ -1316,7 +1334,7 @@
     "target": "verdict-cause-1",
     "kind": "verdict"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 107,
@@ -1327,7 +1345,7 @@
     "label": "Competition explains why most d2c brands fail",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 108,
@@ -1338,7 +1356,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 109,
@@ -1348,7 +1366,7 @@
     "message": "Planning cause queries",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 110,
@@ -1358,7 +1376,7 @@
     "message": "Searching: Competition explains why most d2c brands fail | Competition explains why most d2c brands fail evidence",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 111,
@@ -1368,7 +1386,7 @@
     "message": "Retrieved 5 new sources (0 source errors)",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 112,
@@ -1378,7 +1396,7 @@
     "message": "Round 1: arguing the bull side",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 113,
@@ -1392,7 +1410,7 @@
     "agent": "bull",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 114,
@@ -1403,7 +1421,7 @@
     "target": "cause-2",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 115,
@@ -1417,7 +1435,7 @@
     "stage": "cause:2",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 116,
@@ -1427,7 +1445,7 @@
     "message": "Round 1: arguing the bear side",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 117,
@@ -1441,7 +1459,7 @@
     "agent": "bear",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 118,
@@ -1452,7 +1470,7 @@
     "target": "cause-2",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 119,
@@ -1463,7 +1481,7 @@
     "target": "arg-7",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 120,
@@ -1474,13 +1492,14 @@
     "label": "A 2019 company blog post on Competition explains why most d2c brands fail argues the opposite of the common assumption.",
     "stage": "cause:2",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on Competition explains why most d2c brands fail argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/competition-explains-why-most-d2c-brands-0",
     "title": "[FAKE OFFLINE SOURCE] Competition explains why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 121,
@@ -1491,7 +1510,7 @@
     "target": "arg-8",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 122,
@@ -1502,13 +1521,14 @@
     "label": "A 2019 company blog post on Competition explains why most d2c brands fail argues the opposite of the common assumption.",
     "stage": "cause:2",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on Competition explains why most d2c brands fail argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/competition-explains-why-most-d2c-brands-1",
     "title": "[FAKE OFFLINE SOURCE] Competition explains why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 123,
@@ -1519,7 +1539,7 @@
     "target": "arg-8",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 124,
@@ -1530,13 +1550,14 @@
     "label": "A 2024 industry report on Competition explains why most d2c brands fail finds the claim does not hold in most markets.",
     "stage": "cause:2",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 industry report on Competition explains why most d2c brands fail finds the claim does not hold in most markets.",
     "url": "https://offline.invalid/news/competition-explains-why-most-d2c-brands-2",
     "title": "[FAKE OFFLINE SOURCE] Competition explains why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 125,
@@ -1547,7 +1568,7 @@
     "target": "arg-8",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 126,
@@ -1561,7 +1582,7 @@
     "stage": "cause:2",
     "side_now": "bear"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 127,
@@ -1571,7 +1592,7 @@
     "message": "Checking 3 quotes against their claims",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 128,
@@ -1582,7 +1603,7 @@
     "status": "VERIFIED",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 129,
@@ -1593,7 +1614,7 @@
     "status": "VERIFIED",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 130,
@@ -1604,7 +1625,7 @@
     "status": "VERIFIED",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 131,
@@ -1614,7 +1635,7 @@
     "message": "Scoring verified evidence",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 132,
@@ -1625,7 +1646,7 @@
     "label": "Cause 2: REFUTED",
     "stage": "cause:2"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 133,
@@ -1647,7 +1668,7 @@
      "override": false
     }
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 134,
@@ -1658,7 +1679,7 @@
     "target": "verdict-cause-2",
     "kind": "verdict"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 135,
@@ -1669,7 +1690,7 @@
     "label": "Changing customer demand explains why most d2c brands fail",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 136,
@@ -1680,7 +1701,7 @@
     "target": "claim",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 137,
@@ -1690,7 +1711,7 @@
     "message": "Planning cause queries",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 138,
@@ -1700,7 +1721,7 @@
     "message": "Searching: Changing customer demand explains why most d2c brands fail | Changing customer demand explains why most d2c brands fail evidence",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 139,
@@ -1710,7 +1731,7 @@
     "message": "Retrieved 6 new sources (0 source errors)",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 140,
@@ -1720,7 +1741,7 @@
     "message": "Round 1: arguing the bull side",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 141,
@@ -1734,7 +1755,7 @@
     "agent": "bull",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 142,
@@ -1745,7 +1766,7 @@
     "target": "cause-3",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 143,
@@ -1756,13 +1777,14 @@
     "label": "A 2024 news analysis of Changing customer demand explains why most d2c brands fail finds support for the claim.",
     "stage": "cause:3",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 news analysis of Changing customer demand explains why most d2c brands fail finds support for the claim.",
     "url": "https://offline.invalid/news/changing-customer-demand-explains-why-mo-1",
     "title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 144,
@@ -1773,7 +1795,7 @@
     "target": "arg-9",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 145,
@@ -1784,13 +1806,14 @@
     "label": "An undated forum summary on Changing customer demand explains why most d2c brands fail repeats the claim without data.",
     "stage": "cause:3",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "An undated forum summary on Changing customer demand explains why most d2c brands fail repeats the claim without data.",
     "url": "https://offline.invalid/unknown/changing-customer-demand-explains-why-mo-2",
     "title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 146,
@@ -1801,7 +1824,7 @@
     "target": "arg-9",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 147,
@@ -1812,13 +1835,14 @@
     "label": "A 2024 news analysis of Changing customer demand explains why most d2c brands fail finds support for the claim and grew 43% last year.",
     "stage": "cause:3",
     "side": "bull",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2024 news analysis of Changing customer demand explains why most d2c brands fail finds support for the claim.",
     "url": "https://offline.invalid/news/changing-customer-demand-explains-why-mo-1",
     "title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 148,
@@ -1829,7 +1853,7 @@
     "target": "arg-9",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 149,
@@ -1843,7 +1867,7 @@
     "stage": "cause:3",
     "side_now": "bull"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 150,
@@ -1853,7 +1877,7 @@
     "message": "Round 1: arguing the bear side",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 151,
@@ -1867,7 +1891,7 @@
     "agent": "bear",
     "round": 1
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 152,
@@ -1878,7 +1902,7 @@
     "target": "cause-3",
     "kind": "about"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 153,
@@ -1889,7 +1913,7 @@
     "target": "arg-9",
     "kind": "rebuts"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 154,
@@ -1900,13 +1924,14 @@
     "label": "A 2025 academic study of Changing customer demand explains why most d2c brands fail finds evidence against the claim.",
     "stage": "cause:3",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of Changing customer demand explains why most d2c brands fail finds evidence against the claim.",
     "url": "https://offline.invalid/gov/changing-customer-demand-explains-why-mo-0",
     "title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 155,
@@ -1917,7 +1942,7 @@
     "target": "arg-10",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 156,
@@ -1928,13 +1953,14 @@
     "label": "A 2019 company blog post on Changing customer demand explains why most d2c brands fail evidence argues the opposite of the common assumption.",
     "stage": "cause:3",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2019 company blog post on Changing customer demand explains why most d2c brands fail evidence argues the opposite of the common assumption.",
     "url": "https://offline.invalid/blog/changing-customer-demand-explains-why-mo-0",
     "title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail e"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 157,
@@ -1945,7 +1971,7 @@
     "target": "arg-10",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 158,
@@ -1956,13 +1982,14 @@
     "label": "A 2025 academic study of Changing customer demand explains why most d2c brands fail evidence finds evidence against the claim.",
     "stage": "cause:3",
     "side": "bear",
-    "status": "UNVERIFIED",
-    "factcheck": "unverifiable",
+    "round": 1,
+    "status": null,
+    "factcheck": null,
     "quote": "A 2025 academic study of Changing customer demand explains why most d2c brands fail evidence finds evidence against the claim.",
     "url": "https://offline.invalid/gov/changing-customer-demand-explains-why-mo-2",
     "title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail e"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 159,
@@ -1973,7 +2000,7 @@
     "target": "arg-10",
     "kind": "supports"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 160,
@@ -1987,7 +2014,7 @@
     "stage": "cause:3",
     "side_now": "bear"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 161,
@@ -1997,7 +2024,7 @@
     "message": "Checking 6 quotes against their claims",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 162,
@@ -2008,7 +2035,7 @@
     "status": "VERIFIED",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 163,
@@ -2019,7 +2046,7 @@
     "status": "VERIFIED",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 164,
@@ -2030,7 +2057,7 @@
     "status": "UNVERIFIED",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 165,
@@ -2041,7 +2068,7 @@
     "status": "VERIFIED",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 166,
@@ -2052,7 +2079,7 @@
     "status": "VERIFIED",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 167,
@@ -2063,7 +2090,7 @@
     "status": "VERIFIED",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 168,
@@ -2073,7 +2100,7 @@
     "message": "Scoring verified evidence",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 169,
@@ -2084,7 +2111,7 @@
     "label": "Cause 3: REFUTED",
     "stage": "cause:3"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 170,
@@ -2106,7 +2133,7 @@
      "override": false
     }
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 171,
@@ -2117,7 +2144,7 @@
     "target": "verdict-cause-3",
     "kind": "verdict"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   },
   {
    "seq": 172,
@@ -2127,7 +2154,7 @@
     "message": "Writing the final report",
     "stage": "final"
    },
-   "ts": "2026-09-29T07:43:30+00:00"
+   "ts": "2026-09-29T07:49:04+00:00"
   }
  ],
  "report": {
@@ -2225,7 +2252,7 @@
     "source_url": "https://offline.invalid/gov/most-d2c-brands-fail-statistics-0",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics",
     "retrieved_quote": "A 2025 official statistics release on Most D2C brands fail statistics reports figures consistent with the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -2238,7 +2265,7 @@
     "source_url": "https://offline.invalid/unknown/most-d2c-brands-fail-statistics-2",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics",
     "retrieved_quote": "An undated forum summary on Most D2C brands fail statistics repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -2251,7 +2278,7 @@
     "source_url": "https://offline.invalid/gov/most-d2c-brands-fail-statistics-0",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics",
     "retrieved_quote": "A 2025 official statistics release on Most D2C brands fail statistics reports figures consistent with the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "mismatched",
     "status": "UNVERIFIED",
     "source_tier": null,
@@ -2264,7 +2291,7 @@
     "source_url": "https://offline.invalid/gov/most-d2c-brands-fail-0",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail",
     "retrieved_quote": "A 2025 academic study of Most D2C brands fail finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -2277,7 +2304,7 @@
     "source_url": "https://offline.invalid/gov/most-d2c-brands-fail-1",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail",
     "retrieved_quote": "A 2025 academic study of Most D2C brands fail finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -2290,7 +2317,7 @@
     "source_url": "https://offline.invalid/blog/most-d2c-brands-fail-2",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail",
     "retrieved_quote": "A 2019 company blog post on Most D2C brands fail argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -2303,7 +2330,7 @@
     "source_url": "https://offline.invalid/news/evidence-against-most-d2c-brands-fail-1",
     "source_title": "[FAKE OFFLINE SOURCE] evidence against Most D2C brands fail",
     "retrieved_quote": "A 2024 news analysis of evidence against Most D2C brands fail finds support for the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -2316,7 +2343,7 @@
     "source_url": "https://offline.invalid/gov/evidence-against-most-d2c-brands-fail-2",
     "source_title": "[FAKE OFFLINE SOURCE] evidence against Most D2C brands fail",
     "retrieved_quote": "A 2025 official statistics release on evidence against Most D2C brands fail reports figures consistent with the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -2329,7 +2356,7 @@
     "source_url": "https://offline.invalid/unknown/most-d2c-brands-fail-study-1",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail study",
     "retrieved_quote": "An undated forum summary on Most D2C brands fail study repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -2342,7 +2369,7 @@
     "source_url": "https://offline.invalid/blog/most-d2c-brands-fail-statistics-1",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail statistics",
     "retrieved_quote": "A 2019 company blog post on Most D2C brands fail statistics argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -2355,7 +2382,7 @@
     "source_url": "https://offline.invalid/gov/most-d2c-brands-fail-study-0",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail study",
     "retrieved_quote": "A 2025 academic study of Most D2C brands fail study finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -2368,7 +2395,7 @@
     "source_url": "https://offline.invalid/gov/most-d2c-brands-fail-latest-data-0",
     "source_title": "[FAKE OFFLINE SOURCE] Most D2C brands fail latest data",
     "retrieved_quote": "A 2025 academic study of Most D2C brands fail latest data finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -2381,7 +2408,7 @@
     "source_url": "https://offline.invalid/unknown/rising-costs-explain-why-most-d2c-brands-2",
     "source_title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail",
     "retrieved_quote": "An undated forum summary on Rising costs explain why most d2c brands fail repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -2394,7 +2421,7 @@
     "source_url": "https://offline.invalid/news/rising-costs-explain-why-most-d2c-brands-0",
     "source_title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail evidence",
     "retrieved_quote": "A 2024 news analysis of Rising costs explain why most d2c brands fail evidence finds support for the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -2407,7 +2434,7 @@
     "source_url": "https://offline.invalid/unknown/rising-costs-explain-why-most-d2c-brands-2",
     "source_title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail",
     "retrieved_quote": "An undated forum summary on Rising costs explain why most d2c brands fail repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "mismatched",
     "status": "UNVERIFIED",
     "source_tier": null,
@@ -2420,7 +2447,7 @@
     "source_url": "https://offline.invalid/blog/rising-costs-explain-why-most-d2c-brands-0",
     "source_title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail",
     "retrieved_quote": "A 2019 company blog post on Rising costs explain why most d2c brands fail argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -2433,7 +2460,7 @@
     "source_url": "https://offline.invalid/news/rising-costs-explain-why-most-d2c-brands-1",
     "source_title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail",
     "retrieved_quote": "A 2024 industry report on Rising costs explain why most d2c brands fail finds the claim does not hold in most markets.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -2446,7 +2473,7 @@
     "source_url": "https://offline.invalid/news/rising-costs-explain-why-most-d2c-brands-2",
     "source_title": "[FAKE OFFLINE SOURCE] Rising costs explain why most d2c brands fail evidence",
     "retrieved_quote": "A 2024 industry report on Rising costs explain why most d2c brands fail evidence finds the claim does not hold in most markets.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -2459,7 +2486,7 @@
     "source_url": "https://offline.invalid/blog/competition-explains-why-most-d2c-brands-0",
     "source_title": "[FAKE OFFLINE SOURCE] Competition explains why most d2c brands fail",
     "retrieved_quote": "A 2019 company blog post on Competition explains why most d2c brands fail argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -2472,7 +2499,7 @@
     "source_url": "https://offline.invalid/blog/competition-explains-why-most-d2c-brands-1",
     "source_title": "[FAKE OFFLINE SOURCE] Competition explains why most d2c brands fail",
     "retrieved_quote": "A 2019 company blog post on Competition explains why most d2c brands fail argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -2485,7 +2512,7 @@
     "source_url": "https://offline.invalid/news/competition-explains-why-most-d2c-brands-2",
     "source_title": "[FAKE OFFLINE SOURCE] Competition explains why most d2c brands fail",
     "retrieved_quote": "A 2024 industry report on Competition explains why most d2c brands fail finds the claim does not hold in most markets.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -2498,7 +2525,7 @@
     "source_url": "https://offline.invalid/news/changing-customer-demand-explains-why-mo-1",
     "source_title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail",
     "retrieved_quote": "A 2024 news analysis of Changing customer demand explains why most d2c brands fail finds support for the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 2,
@@ -2511,7 +2538,7 @@
     "source_url": "https://offline.invalid/unknown/changing-customer-demand-explains-why-mo-2",
     "source_title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail",
     "retrieved_quote": "An undated forum summary on Changing customer demand explains why most d2c brands fail repeats the claim without data.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 0,
@@ -2524,7 +2551,7 @@
     "source_url": "https://offline.invalid/news/changing-customer-demand-explains-why-mo-1",
     "source_title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail",
     "retrieved_quote": "A 2024 news analysis of Changing customer demand explains why most d2c brands fail finds support for the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "mismatched",
     "status": "UNVERIFIED",
     "source_tier": null,
@@ -2537,7 +2564,7 @@
     "source_url": "https://offline.invalid/gov/changing-customer-demand-explains-why-mo-0",
     "source_title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail",
     "retrieved_quote": "A 2025 academic study of Changing customer demand explains why most d2c brands fail finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
@@ -2550,7 +2577,7 @@
     "source_url": "https://offline.invalid/blog/changing-customer-demand-explains-why-mo-0",
     "source_title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail e",
     "retrieved_quote": "A 2019 company blog post on Changing customer demand explains why most d2c brands fail evidence argues the opposite of the common assumption.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 1,
@@ -2563,7 +2590,7 @@
     "source_url": "https://offline.invalid/gov/changing-customer-demand-explains-why-mo-2",
     "source_title": "[FAKE OFFLINE SOURCE] Changing customer demand explains why most d2c brands fail e",
     "retrieved_quote": "A 2025 academic study of Changing customer demand explains why most d2c brands fail evidence finds evidence against the claim.",
-    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "retrieved_at": "2026-09-29T07:49:04+00:00",
     "factcheck": "verified",
     "status": "VERIFIED",
     "source_tier": 3,
