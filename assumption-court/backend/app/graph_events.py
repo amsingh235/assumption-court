@@ -5,7 +5,7 @@ Payload conventions (mirrored in frontend/lib/types.ts):
               status?, factcheck?, quote?, url?, title?}
               (evidence nodes start with status=None = pending fact-check)
   edge_add : {id, source, target, kind: supports|rebuts|stance|about|verdict}
-  status   : {agent, message, stage}  or evidence update {evidence_id, factcheck, status, stage}
+  status   : {agent, message, stage}  or evidence update {evidence_id, factcheck, status, stage, agent, reason}
   stance   : {agent, stance, reason, round, argument_id, stage, side_now}
   verdict  : {stage, node_id, verdict: Verdict}
 """
@@ -53,8 +53,9 @@ class EventLog:
     def argument_node(self, arg: Argument, stage: str, side: str) -> None:
         self.node(arg.id, "argument", arg.text, stage, side=side, agent=arg.agent, round=arg.round)
 
-    def evidence_update(self, ev: Evidence, stage: str) -> None:
-        self.emit("status", {"evidence_id": ev.id, "factcheck": ev.factcheck, "status": ev.status, "stage": stage})
+    def evidence_update(self, ev: Evidence, stage: str, reason: str = "") -> None:
+        self.emit("status", {"evidence_id": ev.id, "factcheck": ev.factcheck, "status": ev.status, "stage": stage,
+                             "agent": "factchecker", "reason": reason})
 
     def stance(self, arg: Argument, stage: str, side_now: str) -> None:
         self.emit("stance", {"agent": arg.agent, "stance": arg.stance, "reason": arg.stance_reason,

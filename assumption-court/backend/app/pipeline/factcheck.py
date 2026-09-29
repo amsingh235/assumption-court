@@ -33,5 +33,5 @@ def factcheck_all(trial: Trial, evidence: list[Evidence], stage: str) -> list[Ev
         }, FactCheckOut)
         ev.factcheck = out.factcheck
         enforce_unverified(ev)
-        trial.events.evidence_update(ev, stage)
+        trial.events.evidence_update(ev, stage, out.reason)
     return evidence

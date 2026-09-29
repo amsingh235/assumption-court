@@ -6,9 +6,9 @@ import type { CourtNodeData } from "@/lib/graphState";
 type CourtNode = Node<CourtNodeData>;
 
 const sideClass = {
-  bull: "border-green-600 bg-green-50",
-  bear: "border-red-600 bg-red-50",
-  neutral: "border-slate-400 bg-white",
+  bull: "border-green-500 bg-[#1f2a22] text-green-50",
+  bear: "border-red-500 bg-[#2d1f1f] text-red-50",
+  neutral: "border-slate-500 bg-coal text-cream",
 } as const;
 
 function Handles() {
@@ -23,22 +23,22 @@ function Handles() {
 export function ClaimNode({ data }: NodeProps<CourtNode>) {
   const p = data.payload;
   return (
-    <div className="w-[260px] rounded-lg border-2 border-accent bg-white px-3 py-2 text-sm shadow">
+    <div className="w-[260px] rounded-lg border-2 border-clay bg-cream px-3 py-2 text-sm shadow">
       <Handles />
-      <div className="text-[10px] font-semibold uppercase tracking-wide text-accent">
+      <div className="font-pixel text-[10px] uppercase text-clay-dark">
         On trial{p.input_type === "why-question" ? " · premise" : ""}
       </div>
-      <div className="font-medium text-navy">{p.label}</div>
+      <div className="font-medium text-ink">{p.label}</div>
     </div>
   );
 }
 
 export function CauseNode({ data }: NodeProps<CourtNode>) {
   return (
-    <div className="w-[260px] rounded-lg border-2 border-dashed border-accent bg-white px-3 py-2 text-sm shadow">
+    <div className="w-[260px] rounded-lg border-2 border-dashed border-clay bg-cream px-3 py-2 text-sm shadow">
       <Handles />
-      <div className="text-[10px] font-semibold uppercase tracking-wide text-accent">Candidate cause</div>
-      <div className="text-navy">{data.payload.label}</div>
+      <div className="font-pixel text-[10px] uppercase text-clay-dark">Candidate cause</div>
+      <div className="text-ink">{data.payload.label}</div>
     </div>
   );
 }
@@ -51,17 +51,17 @@ export function ArgumentNode({ data }: NodeProps<CourtNode>) {
     <div className={`w-[240px] rounded-lg border-2 px-3 py-2 text-xs shadow-sm ${sideClass[side]}`}>
       <Handles />
       <div className="mb-1 flex items-center justify-between text-[10px] font-semibold uppercase">
-        <span className={side === "bull" ? "text-green-700" : "text-red-700"}>
+        <span className={side === "bull" ? "text-green-400" : "text-red-400"}>
           {p.agent === "bull" ? "📈 Bull" : "📉 Bear"} · round {p.round}
           {p.agent && p.side !== p.agent ? " · switched" : ""}
         </span>
         {stance && stance.stance !== "hold" && (
-          <span className="rounded bg-navy px-1.5 py-0.5 text-white" title={stance.reason}>
+          <span className="rounded bg-clay px-1.5 py-0.5 text-ink" title={stance.reason}>
             {stance.stance}
           </span>
         )}
       </div>
-      <div className="line-clamp-4 text-slate-800">{p.label}</div>
+      <div className="line-clamp-4">{p.label}</div>
     </div>
   );
 }
@@ -70,12 +70,12 @@ export function EvidenceNode({ data }: NodeProps<CourtNode>) {
   const p = data.payload;
   const pending = !p.status; // not fact-checked yet
   const unverified = p.status === "UNVERIFIED";
-  const cls = unverified ? "border-slate-400 bg-slate-100 text-slate-500" : sideClass[p.side ?? "neutral"];
+  const cls = unverified ? "border-slate-600 bg-[#2a2927] text-slate-400" : sideClass[p.side ?? "neutral"];
   return (
     <div className={`group relative w-[220px] rounded-md border px-2.5 py-2 text-[11px] shadow-sm ${cls}`}>
       <Handles />
       <div className="mb-1 flex items-center justify-between gap-1">
-        <span className="truncate text-[10px] text-slate-500">{p.title}</span>
+        <span className="truncate text-[10px] opacity-60">{p.title}</span>
         {unverified ? (
           <span className="shrink-0 rounded bg-slate-500 px-1.5 py-0.5 text-[9px] font-bold text-white">UNVERIFIED</span>
         ) : (
@@ -83,11 +83,11 @@ export function EvidenceNode({ data }: NodeProps<CourtNode>) {
         )}
       </div>
       <div className={`line-clamp-3 ${unverified ? "line-through decoration-slate-400" : ""}`}>{p.label}</div>
-      <div className="pointer-events-none absolute left-0 top-full z-50 mt-1 hidden w-[300px] rounded-md bg-navy p-3 text-[11px] text-white shadow-lg group-hover:block">
+      <div className="pointer-events-none absolute left-0 top-full z-50 mt-1 hidden w-[300px] rounded-md bg-cream p-3 text-[11px] text-ink shadow-lg group-hover:block">
         <div className="mb-1 font-semibold">Verbatim quote</div>
         <div className="italic">“{p.quote}”</div>
-        <div className="mt-2 truncate text-blue-200">{p.url}</div>
-        {p.factcheck && <div className="mt-1 text-blue-200">Fact-check: {p.factcheck}</div>}
+        <div className="mt-2 truncate text-clay-dark">{p.url}</div>
+        {p.factcheck && <div className="mt-1 text-ink/60">Fact-check: {p.factcheck}</div>}
       </div>
     </div>
   );
@@ -95,7 +95,7 @@ export function EvidenceNode({ data }: NodeProps<CourtNode>) {
 
 export function VerdictNode({ data }: NodeProps<CourtNode>) {
   return (
-    <div className="w-[280px] rounded-lg bg-navy px-4 py-3 text-center text-sm font-semibold text-white shadow-lg">
+    <div className="font-pixel w-[280px] rounded-lg border-2 border-clay bg-navy px-4 py-3 text-center text-sm text-cream shadow-lg">
       <Handles />
       ⚖️ {data.payload.label}
     </div>

@@ -28,9 +28,9 @@ function Inner({ nodes, edges, onSelect }: Props) {
       minZoom={0.1}
       onNodeClick={(_, n) => onSelect(n.data as CourtNodeData)}
       onPaneClick={() => onSelect(null)}
-      proOptions={{ hideAttribution: false }}
+      colorMode="dark"
     >
-      <Background gap={24} color="#e2e8f0" />
+      <Background gap={24} color="#3a3633" />
       <Controls showInteractive={false} />
     </ReactFlow>
   );
@@ -38,7 +38,7 @@ function Inner({ nodes, edges, onSelect }: Props) {
 
 export default function TrialGraph(props: Props) {
   return (
-    <div className="h-[55vh] min-h-[360px] w-full overflow-hidden rounded-xl border border-slate-200 bg-slate-50 sm:h-[62vh]">
+    <div className="h-[55vh] min-h-[360px] w-full overflow-hidden bg-ink sm:h-full">
       <ReactFlowProvider>
         <Inner {...props} />
       </ReactFlowProvider>

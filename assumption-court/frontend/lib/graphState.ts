@@ -91,15 +91,15 @@ function position(state: CourtState, p: NodeAddPayload): { x: number; y: number 
 function edgeStyle(kind: EdgeAddPayload["kind"]): Partial<Edge> {
   switch (kind) {
     case "supports":
-      return { style: { stroke: "#94a3b8" } };
+      return { style: { stroke: "#78716c" } };
     case "rebuts":
       return { style: { stroke: "#f59e0b" }, animated: true, label: "rebuts" };
     case "stance":
-      return { style: { stroke: "#0A1F44", strokeDasharray: "6 4" }, label: "stance" };
+      return { style: { stroke: "#d97757", strokeDasharray: "6 4" }, label: "stance" };
     case "verdict":
-      return { style: { stroke: "#0A1F44", strokeWidth: 2 } };
+      return { style: { stroke: "#d97757", strokeWidth: 2 } };
     default:
-      return { style: { stroke: "#cbd5e1" } };
+      return { style: { stroke: "#57534e" } };
   }
 }
 
