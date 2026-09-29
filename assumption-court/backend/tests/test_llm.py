@@ -85,3 +85,73 @@ def test_gemini_bad_key_is_not_configured(monkeypatch, settings_env):
     _fake_genai(monkeypatch, [400])
     with pytest.raises(llm.LLMNotConfigured):
         llm._gemini_generate("p", json_mode=True)
+
+
+class _Resp:
+    def __init__(self, code, payload=None):
+        self.status_code = code
+        self._payload = payload or {}
+        self.text = str(payload)
+
+    def json(self):
+        return self._payload
+
+
+def _compat_env(settings_env, **extra):
+    return settings_env(OPENAI_COMPAT_BASE_URL="https://api.example.test/v1", OPENAI_COMPAT_API_KEY="k",
+                        OPENAI_COMPAT_MODEL="some-model", **extra)
+
+
+def test_openai_compat_success(monkeypatch, settings_env):
+    _compat_env(settings_env, LLM_PROVIDER="openai_compat")
+    sent = {}
+
+    def post(url, json, headers, timeout):
+        sent.update(url=url, body=json, auth=headers["Authorization"])
+        return _Resp(200, {"choices": [{"message": {"content": '{"ok": 1}'}}], "usage": {"total_tokens": 42}})
+
+    monkeypatch.setattr(llm.httpx, "post", post)
+    text, tokens, model = llm._openai_compat_generate("prompt", json_mode=True)
+    assert (text, tokens, model) == ('{"ok": 1}', 42, "some-model")
+    assert sent["url"] == "https://api.example.test/v1/chat/completions"
+    assert sent["body"]["response_format"] == {"type": "json_object"} and sent["auth"] == "Bearer k"
+
+
+def test_openai_compat_drops_json_mode_when_unsupported(monkeypatch, settings_env):
+    _compat_env(settings_env, LLM_PROVIDER="openai_compat")
+    bodies = []
+
+    def post(url, json, headers, timeout):
+        bodies.append(dict(json))
+        if "response_format" in json:
+            return _Resp(400, {"error": "response_format not supported"})
+        return _Resp(200, {"choices": [{"message": {"content": "{}"}}]})
+
+    monkeypatch.setattr(llm.httpx, "post", post)
+    assert llm._openai_compat_generate("p", json_mode=True)[0] == "{}"
+    assert "response_format" in bodies[0] and "response_format" not in bodies[1]
+
+
+def test_busy_gemini_falls_back_to_backup(monkeypatch, settings_env):
+    _compat_env(settings_env, LLM_PROVIDER="gemini", LLM_FALLBACK_PROVIDER="openai_compat",
+                GEMINI_API_KEY="k", GEMINI_MODEL="m")
+
+    def busy(prompt, json_mode):
+        raise llm.ModelBusy("503")
+
+    monkeypatch.setitem(llm._PROVIDERS, "gemini", busy)
+    monkeypatch.setitem(llm._PROVIDERS, "openai_compat", lambda p, j: ('{"x": 1}', None, "backup-model"))
+    assert llm._generate("classify", "p", {}, True) == ('{"x": 1}', None, "backup-model")
+
+
+def test_busy_without_backup_still_raises(monkeypatch, settings_env):
+    import pytest
+
+    settings_env(LLM_PROVIDER="gemini", LLM_FALLBACK_PROVIDER="", GEMINI_API_KEY="k", GEMINI_MODEL="m")
+
+    def busy(prompt, json_mode):
+        raise llm.ModelBusy("503")
+
+    monkeypatch.setitem(llm._PROVIDERS, "gemini", busy)
+    with pytest.raises(llm.ModelBusy):
+        llm._generate("classify", "p", {}, True)

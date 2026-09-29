@@ -80,7 +80,7 @@ def _gemini_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], 
         automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),  # no tools used
     )
     delay = 4.0
-    attempts = 4
+    attempts = 2 if s.llm_fallback_provider else 4  # with a backup provider, hand over quickly
     for attempt in range(attempts):
         try:
             resp = client.models.generate_content(model=s.gemini_model, contents=prompt, config=config)
@@ -104,6 +104,47 @@ def _gemini_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], 
     raise LLMError("unreachable")
 
 
+def _openai_compat_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], str]:
+    """Any OpenAI-compatible /chat/completions API (Groq, OpenRouter, Together, Mistral, LM Studio, ...)."""
+    s = get_settings()
+    if not (s.openai_compat_base_url and s.openai_compat_api_key and s.openai_compat_model):
+        raise LLMNotConfigured("OPENAI_COMPAT_BASE_URL, OPENAI_COMPAT_API_KEY and OPENAI_COMPAT_MODEL must be set")
+    body: dict[str, Any] = {
+        "model": s.openai_compat_model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2,
+    }
+    if json_mode:
+        body["response_format"] = {"type": "json_object"}
+    headers = {"Authorization": f"Bearer {s.openai_compat_api_key}"}
+    url = f"{s.openai_compat_base_url}/chat/completions"
+    delay = 4.0
+    for attempt in range(3):
+        resp = httpx.post(url, json=body, headers=headers, timeout=120)
+        code = resp.status_code
+        if code == 400 and "response_format" in body:
+            body.pop("response_format")  # some models don't support JSON mode; the prompt still asks for JSON
+            continue
+        if code == 200:
+            data = resp.json()
+            text = (data.get("choices") or [{}])[0].get("message", {}).get("content") or ""
+            tokens = (data.get("usage") or {}).get("total_tokens")
+            return text, tokens, s.openai_compat_model
+        if (code == 429 or code >= 500) and attempt < 2:
+            time.sleep(delay)
+            delay *= 2
+            continue
+        detail = resp.text[:300]
+        if code == 429:
+            raise QuotaExhausted(detail)
+        if code >= 500:
+            raise ModelBusy(detail)
+        if code in (400, 401, 403, 404):
+            raise LLMNotConfigured(f"the OpenAI-compatible API rejected the request ({code}): {detail}")
+        raise LLMError(f"openai_compat call failed ({code}): {detail}")
+    raise LLMError("openai_compat call failed after retries")
+
+
 def _ollama_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], str]:
     s = get_settings()
     if not s.ollama_model:
@@ -118,17 +159,28 @@ def _ollama_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], 
     return data.get("response", ""), tokens, s.ollama_model
 
 
+_PROVIDERS = {
+    "gemini": _gemini_generate,
+    "openai_compat": _openai_compat_generate,
+    "ollama": _ollama_generate,
+}
+
+
 def _generate(prompt_name: str, prompt: str, variables: dict[str, Any], json_mode: bool) -> tuple[str, Optional[int], str]:
-    provider = get_settings().llm_provider
-    if provider == "fake":
+    s = get_settings()
+    if s.llm_provider == "fake":
         from app.fake_llm import fake_generate
 
         return fake_generate(prompt_name, variables), None, "fake"
-    if provider == "ollama":
-        return _ollama_generate(prompt, json_mode)
-    if provider == "gemini":
-        return _gemini_generate(prompt, json_mode)
-    raise LLMError(f"unknown LLM_PROVIDER {provider!r}")
+    if s.llm_provider not in _PROVIDERS:
+        raise LLMError(f"unknown LLM_PROVIDER {s.llm_provider!r}")
+    try:
+        return _PROVIDERS[s.llm_provider](prompt, json_mode)
+    except (ModelBusy, QuotaExhausted):
+        backup = _PROVIDERS.get(s.llm_fallback_provider)
+        if backup is None or s.llm_fallback_provider == s.llm_provider:
+            raise
+        return backup(prompt, json_mode)  # the log records which model actually answered
 
 
 # ---------------------------------------------------------------- public API

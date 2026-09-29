@@ -68,6 +68,10 @@ cd backend && uvicorn app.main:app --reload --port 8000        # terminal 1
 cd frontend && npm install && npm run dev                      # terminal 2 → http://localhost:3000
 ```
 
+**Backup AI provider.** Free tiers get overloaded. Set `LLM_FALLBACK_PROVIDER=openai_compat` plus the three
+`OPENAI_COMPAT_*` values in `.env` to hand calls to any OpenAI-compatible API (e.g. Groq or OpenRouter) whenever
+Gemini is busy or out of quota. You can also make it the main provider with `LLM_PROVIDER=openai_compat`.
+
 No key yet? Run the whole thing offline with deterministic stand-ins (verdicts are meaningless, the UI says so):
 
 ```bash

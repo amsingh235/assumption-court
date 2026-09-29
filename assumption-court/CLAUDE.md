@@ -39,7 +39,7 @@ cd frontend && npm run lint && npm run build
 python eval/fetch_fever.py && python eval/run_eval.py --all && python eval/run_eval.py --summary
 ```
 
-`LLM_PROVIDER=fake` (`backend/app/fake_llm.py`) and `RETRIEVAL_PROVIDER=fake` are deterministic stand-ins, keyed by prompt name. When you add a prompt, add a handler there too or fake mode breaks. The test suite forces both (`tests/conftest.py`).
+Providers live in `backend/app/llm.py` (`_PROVIDERS`: gemini, openai_compat, ollama); `LLM_FALLBACK_PROVIDER` takes over on overload/quota errors (`ModelBusy`/`QuotaExhausted`). `LLM_PROVIDER=fake` (`backend/app/fake_llm.py`) and `RETRIEVAL_PROVIDER=fake` are deterministic stand-ins, keyed by prompt name. When you add a prompt, add a handler there too or fake mode breaks. The test suite forces both (`tests/conftest.py`).
 
 ## Architecture across files
 

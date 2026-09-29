@@ -31,11 +31,15 @@ def _float(name: str, default: float) -> float:
 
 @dataclass(frozen=True)
 class Settings:
-    llm_provider: str  # gemini | ollama | fake
+    llm_provider: str  # gemini | openai_compat | ollama | fake
+    llm_fallback_provider: str  # "" or another provider, used when the primary is overloaded / out of quota
     gemini_api_key: str
     gemini_model: str
     ollama_model: str
     ollama_host: str
+    openai_compat_base_url: str  # e.g. Groq or OpenRouter (any OpenAI-compatible /chat/completions API)
+    openai_compat_api_key: str
+    openai_compat_model: str
     retrieval_provider: str  # live | fake
     judge_decisive_gap: float
     max_evidence_per_side: int
@@ -52,10 +56,14 @@ class Settings:
 def get_settings() -> Settings:
     return Settings(
         llm_provider=os.getenv("LLM_PROVIDER", "gemini").strip().lower() or "gemini",
+        llm_fallback_provider=os.getenv("LLM_FALLBACK_PROVIDER", "").strip().lower(),
         gemini_api_key=os.getenv("GEMINI_API_KEY", "").strip(),
         gemini_model=os.getenv("GEMINI_MODEL", "").strip(),
         ollama_model=os.getenv("OLLAMA_MODEL", "").strip(),
         ollama_host=os.getenv("OLLAMA_HOST", "http://localhost:11434").strip(),
+        openai_compat_base_url=os.getenv("OPENAI_COMPAT_BASE_URL", "").strip().rstrip("/"),
+        openai_compat_api_key=os.getenv("OPENAI_COMPAT_API_KEY", "").strip(),
+        openai_compat_model=os.getenv("OPENAI_COMPAT_MODEL", "").strip(),
         retrieval_provider=os.getenv("RETRIEVAL_PROVIDER", "live").strip().lower() or "live",
         judge_decisive_gap=_float("JUDGE_DECISIVE_GAP", 3.0),
         max_evidence_per_side=_int("MAX_EVIDENCE_PER_SIDE", 3),
