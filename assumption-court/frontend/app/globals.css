@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1a1918;
+  --color-coal: #262422;
+  --color-cream: #f0e6da;
+  --color-clay: #d97757;
+  --color-clay-dark: #a8502f;
+  --color-wood: #6b4430;
+  --color-navy: #0a1f44;
+  --color-accent: #3b82f6;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-pixel: "Silkscreen", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+@utility font-pixel {
+  font-family: var(--font-pixel);
+  letter-spacing: 0.02em;
+}
+
+html,
+body {
+  background: #1a1918;
+  color: #f0e6da;
+}
+
+/* ---- pixel sprite animation (steps() keeps it chunky) ---- */
+@keyframes px-bob { 50% { transform: translateY(-1px); } }
+.px-bob { animation: px-bob 1.2s steps(1) infinite; }
+
+@keyframes px-walk { 50% { transform: translateY(-1.5px); } }
+.px-walk { animation: px-walk 0.3s steps(1) infinite; }
+@keyframes px-frame-a { 50% { opacity: 0; } }
+@keyframes px-frame-b { 0% { opacity: 0; } 50% { opacity: 1; } }
+.px-walk .px-frame-a { animation: px-frame-a 0.3s steps(1) infinite; }
+.px-walk .px-frame-b { animation: px-frame-b 0.3s steps(1) infinite; }
+
+@keyframes px-talk { 50% { opacity: 0; } }
+.px-talk { animation: px-talk 0.24s steps(1) infinite; }
+
+@keyframes px-flag { 50% { transform: translateY(-0.5px); } }
+.px-flag { animation: px-flag 0.5s steps(1) infinite; }
+
+@keyframes px-gavel {
+  0%, 100% { transform: rotate(0); }
+  30% { transform: rotate(-8deg) translateY(-1px); }
+  45% { transform: rotate(4deg) translateY(1px); }
+}
+.px-gavel { animation: px-gavel 0.7s ease-out 2; transform-origin: 50% 90%; }
+
+@keyframes px-shake {
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+.px-shake { animation: px-shake 0.45s linear 1; }
+
+/* ---- stage effects ---- */
+@keyframes tw-char { to { opacity: 1; } }
+.tw-char { opacity: 0; animation: tw-char 0.01s linear forwards; }
+
+@keyframes bubble-in { from { transform: translateY(6px) scale(0.97); opacity: 0; } }
+.bubble-in { animation: bubble-in 0.2s ease-out; }
+
+@keyframes exhibit-in { from { transform: translateY(24px); opacity: 0; } }
+.exhibit-in { animation: exhibit-in 0.35s ease-out; }
+
+@keyframes stamp-in { from { transform: rotate(-8deg) scale(2.2); opacity: 0; } }
+.stamp-in { animation: stamp-in 0.25s cubic-bezier(0.3, 1.6, 0.5, 1); }
+
+@keyframes gavel-in {
+  0% { transform: translate(-50%, -30px) scale(1.4); opacity: 0; }
+  60% { transform: translate(-50%, 4px) scale(0.96); opacity: 1; }
+  100% { transform: translate(-50%, 0) scale(1); }
+}
+.gavel-in { animation: gavel-in 0.45s ease-out; }
+
+/* React Flow on dark */
+.react-flow__node:hover { z-index: 1000 !important; }
+.react-flow__controls-button { background: #f0e6da; border-color: #b9a58f; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .tw-char { opacity: 1; }
+}

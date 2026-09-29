@@ -8,3 +8,12 @@ node_modules/
 backend/logs/
 eval/results.jsonl
 .DS_Store
+.env.*
+!.env.example
+.pytest_cache/
+*.egg-info/
+.coverage
+frontend/out/
+frontend/test-results/
+frontend/playwright-report/
+eval/citation_grades.jsonl
