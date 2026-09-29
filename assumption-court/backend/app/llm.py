@@ -29,6 +29,10 @@ class LLMNotConfigured(LLMError):
     """Missing key/model for the selected provider. Safe to show to the user."""
 
 
+class ModelBusy(LLMError):
+    """Provider returned 5xx (overloaded / unavailable) after retries. Temporary; safe to show to the user."""
+
+
 class QuotaExhausted(LLMError):
     """Provider returned HTTP 429 after retries. The API surfaces this as 'try an example'."""
 
@@ -73,21 +77,29 @@ def _gemini_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], 
     config = types.GenerateContentConfig(
         temperature=0.2,
         response_mime_type="application/json" if json_mode else "text/plain",
+        automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),  # no tools used
     )
     delay = 4.0
-    for attempt in range(3):
+    attempts = 4
+    for attempt in range(attempts):
         try:
             resp = client.models.generate_content(model=s.gemini_model, contents=prompt, config=config)
             usage = getattr(resp, "usage_metadata", None)
             tokens = getattr(usage, "total_token_count", None) if usage else None
             return resp.text or "", tokens, s.gemini_model
         except Exception as exc:  # google.genai.errors.APIError carries .code
-            if getattr(exc, "code", None) == 429:
-                if attempt == 2:
-                    raise QuotaExhausted(str(exc)) from exc
-                time.sleep(delay)
+            code = getattr(exc, "code", None)
+            retryable = code == 429 or (isinstance(code, int) and code >= 500)
+            if retryable and attempt < attempts - 1:
+                time.sleep(delay)  # 4s, 8s, 16s
                 delay *= 2
                 continue
+            if code == 429:
+                raise QuotaExhausted(str(exc)) from exc
+            if retryable:
+                raise ModelBusy(str(exc)) from exc
+            if code in (400, 401, 403, 404):
+                raise LLMNotConfigured(f"Gemini rejected the request ({code}); check GEMINI_API_KEY and GEMINI_MODEL") from exc
             raise LLMError(f"gemini call failed: {exc}") from exc
     raise LLMError("unreachable")
 

@@ -10,7 +10,7 @@
 - **Frontend** (`frontend/`): a dark, pixel-agent courtroom with a live speech-bubble debate, exhibits with fact-check stamps, a transcript, an evidence graph and a ruling card. Examples replay even with the backend down.
 - **Evaluation** (`eval/`): fair single-prompt baseline, resumable runner, citation grader with a manual-check sample, FEVER fetcher, and 30 unlabelled business assumptions.
 - **Deploy:** Dockerfile for HF Spaces (built and smoke-tested locally) and `DEPLOY.md` for Spaces + Vercel.
-- **Tests:** 44 offline pytest tests, plus `network` and `llm` marked tests for real conditions.
+- **Tests:** 47 offline pytest tests, plus `network` and `llm` marked tests for real conditions.
 
 ## (b) Known issues
 

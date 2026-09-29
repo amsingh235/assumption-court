@@ -12,7 +12,7 @@ from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import CACHED_CASES_DIR, get_settings
-from app.llm import LLMNotConfigured, QuotaExhausted
+from app.llm import LLMNotConfigured, ModelBusy, QuotaExhausted
 from app.models import GraphEvent, TrialJob, TrialRequest
 from app.pipeline.build import run_trial
 from app.pipeline.state import TrialTimeout
@@ -75,6 +75,9 @@ def run_job(job_id: str, text: str) -> None:
         job.status = "done"
     except QuotaExhausted:
         job.error = "The free LLM quota is exhausted right now. Try an example instead."
+        job.status = "error"
+    except ModelBusy:
+        job.error = "The AI model is overloaded right now (a temporary problem on the provider's side). Try again in a minute, or replay an example."
         job.status = "error"
     except LLMNotConfigured as exc:
         job.error = f"The court has no LLM configured: {exc}. Replay an example meanwhile."
