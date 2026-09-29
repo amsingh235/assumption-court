@@ -1,0 +1,1075 @@
+{
+ "id": "false-great-wall",
+ "title": "The Great Wall of China is visible from the Moon with the naked eye (offline placeholder)",
+ "generated_at": "2026-09-29T07:43:30+00:00",
+ "llm_provider": "fake",
+ "retrieval_provider": "fake",
+ "events": [
+  {
+   "seq": 1,
+   "type": "node_add",
+   "payload": {
+    "id": "claim",
+    "kind": "claim",
+    "label": "The Great Wall of China is visible from the Moon with the naked eye",
+    "stage": "premise",
+    "input_type": "assumption"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 2,
+   "type": "status",
+   "payload": {
+    "agent": "court",
+    "message": "Classified as assumption",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 3,
+   "type": "status",
+   "payload": {
+    "agent": "researcher",
+    "message": "Planning broad queries",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 4,
+   "type": "status",
+   "payload": {
+    "agent": "researcher",
+    "message": "Searching: The Great Wall of China is visible from the Moon with the naked eye | The Great Wall of China is visible from the Moon with the naked eye statistics | evidence against The Great Wall of China is visible from the Moon with the naked eye | The Great Wall of China is visible from the Moon with the naked eye study",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 5,
+   "type": "status",
+   "payload": {
+    "agent": "researcher",
+    "message": "Retrieved 10 new sources (0 source errors)",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 6,
+   "type": "status",
+   "payload": {
+    "agent": "bull",
+    "message": "Round 1: arguing the bull side",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 7,
+   "type": "node_add",
+   "payload": {
+    "id": "arg-1",
+    "kind": "argument",
+    "label": "[fake LLM] Round 1: 2 retrieved source(s) suggest the claim holds.",
+    "stage": "premise",
+    "side": "bull",
+    "agent": "bull",
+    "round": 1
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 8,
+   "type": "edge_add",
+   "payload": {
+    "id": "e1",
+    "source": "arg-1",
+    "target": "claim",
+    "kind": "about"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 9,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-1",
+    "kind": "evidence",
+    "label": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "stage": "premise",
+    "side": "bull",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 10,
+   "type": "edge_add",
+   "payload": {
+    "id": "e2",
+    "source": "ev-1",
+    "target": "arg-1",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 11,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-2",
+    "kind": "evidence",
+    "label": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "stage": "premise",
+    "side": "bull",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 12,
+   "type": "edge_add",
+   "payload": {
+    "id": "e3",
+    "source": "ev-2",
+    "target": "arg-1",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 13,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-3",
+    "kind": "evidence",
+    "label": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data and grew 43% last year.",
+    "stage": "premise",
+    "side": "bull",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 14,
+   "type": "edge_add",
+   "payload": {
+    "id": "e4",
+    "source": "ev-3",
+    "target": "arg-1",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 15,
+   "type": "stance",
+   "payload": {
+    "agent": "bull",
+    "stance": "hold",
+    "reason": "The cited sources still favour my side.",
+    "round": 1,
+    "argument_id": "arg-1",
+    "stage": "premise",
+    "side_now": "bull"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 16,
+   "type": "status",
+   "payload": {
+    "agent": "bear",
+    "message": "Round 1: arguing the bear side",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 17,
+   "type": "node_add",
+   "payload": {
+    "id": "arg-2",
+    "kind": "argument",
+    "label": "[fake LLM] Round 1: 3 retrieved source(s) suggest the claim does not hold.",
+    "stage": "premise",
+    "side": "bear",
+    "agent": "bear",
+    "round": 1
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 18,
+   "type": "edge_add",
+   "payload": {
+    "id": "e5",
+    "source": "arg-2",
+    "target": "claim",
+    "kind": "about"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 19,
+   "type": "edge_add",
+   "payload": {
+    "id": "e6",
+    "source": "arg-2",
+    "target": "arg-1",
+    "kind": "rebuts"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 20,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-4",
+    "kind": "evidence",
+    "label": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye argues the opposite of the common assumption.",
+    "stage": "premise",
+    "side": "bear",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye argues the opposite of the common assumption.",
+    "url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--0",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 21,
+   "type": "edge_add",
+   "payload": {
+    "id": "e7",
+    "source": "ev-4",
+    "target": "arg-2",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 22,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-5",
+    "kind": "evidence",
+    "label": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "stage": "premise",
+    "side": "bear",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--1",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 23,
+   "type": "edge_add",
+   "payload": {
+    "id": "e8",
+    "source": "ev-5",
+    "target": "arg-2",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 24,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-6",
+    "kind": "evidence",
+    "label": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "stage": "premise",
+    "side": "bear",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--2",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 25,
+   "type": "edge_add",
+   "payload": {
+    "id": "e9",
+    "source": "ev-6",
+    "target": "arg-2",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 26,
+   "type": "stance",
+   "payload": {
+    "agent": "bear",
+    "stance": "hold",
+    "reason": "The cited sources still favour my side.",
+    "round": 1,
+    "argument_id": "arg-2",
+    "stage": "premise",
+    "side_now": "bear"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 27,
+   "type": "status",
+   "payload": {
+    "agent": "researcher",
+    "message": "Planning gap queries",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 28,
+   "type": "status",
+   "payload": {
+    "agent": "researcher",
+    "message": "Searching: The Great Wall of China is visible from the Moon with the naked eye latest data",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 29,
+   "type": "status",
+   "payload": {
+    "agent": "researcher",
+    "message": "Retrieved 2 new sources (0 source errors)",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 30,
+   "type": "status",
+   "payload": {
+    "agent": "bull",
+    "message": "Round 2: arguing the bull side",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 31,
+   "type": "node_add",
+   "payload": {
+    "id": "arg-3",
+    "kind": "argument",
+    "label": "[fake LLM] Round 2: 2 retrieved source(s) suggest the claim holds.",
+    "stage": "premise",
+    "side": "bull",
+    "agent": "bull",
+    "round": 2
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 32,
+   "type": "edge_add",
+   "payload": {
+    "id": "e10",
+    "source": "arg-3",
+    "target": "claim",
+    "kind": "about"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 33,
+   "type": "edge_add",
+   "payload": {
+    "id": "e11",
+    "source": "arg-3",
+    "target": "arg-2",
+    "kind": "rebuts"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 34,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-7",
+    "kind": "evidence",
+    "label": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "stage": "premise",
+    "side": "bull",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 35,
+   "type": "edge_add",
+   "payload": {
+    "id": "e12",
+    "source": "ev-7",
+    "target": "arg-3",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 36,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-8",
+    "kind": "evidence",
+    "label": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "stage": "premise",
+    "side": "bull",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 37,
+   "type": "edge_add",
+   "payload": {
+    "id": "e13",
+    "source": "ev-8",
+    "target": "arg-3",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 38,
+   "type": "stance",
+   "payload": {
+    "agent": "bull",
+    "stance": "concede",
+    "reason": "Only 2 of 12 sources favour my side.",
+    "round": 2,
+    "argument_id": "arg-3",
+    "stage": "premise",
+    "side_now": "bull"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 39,
+   "type": "edge_add",
+   "payload": {
+    "id": "e14",
+    "source": "arg-3",
+    "target": "claim",
+    "kind": "stance"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 40,
+   "type": "status",
+   "payload": {
+    "agent": "bear",
+    "message": "Round 2: arguing the bear side",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 41,
+   "type": "node_add",
+   "payload": {
+    "id": "arg-4",
+    "kind": "argument",
+    "label": "[fake LLM] Round 2: 3 retrieved source(s) suggest the claim does not hold.",
+    "stage": "premise",
+    "side": "bear",
+    "agent": "bear",
+    "round": 2
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 42,
+   "type": "edge_add",
+   "payload": {
+    "id": "e15",
+    "source": "arg-4",
+    "target": "claim",
+    "kind": "about"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 43,
+   "type": "edge_add",
+   "payload": {
+    "id": "e16",
+    "source": "arg-4",
+    "target": "arg-3",
+    "kind": "rebuts"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 44,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-9",
+    "kind": "evidence",
+    "label": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye statistics argues the opposite of the common assumption.",
+    "stage": "premise",
+    "side": "bear",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye statistics argues the opposite of the common assumption.",
+    "url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--2",
+    "title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 45,
+   "type": "edge_add",
+   "payload": {
+    "id": "e17",
+    "source": "ev-9",
+    "target": "arg-4",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 46,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-10",
+    "kind": "evidence",
+    "label": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "stage": "premise",
+    "side": "bear",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-0",
+    "title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 47,
+   "type": "edge_add",
+   "payload": {
+    "id": "e18",
+    "source": "ev-10",
+    "target": "arg-4",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 48,
+   "type": "node_add",
+   "payload": {
+    "id": "ev-11",
+    "kind": "evidence",
+    "label": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "stage": "premise",
+    "side": "bear",
+    "status": "UNVERIFIED",
+    "factcheck": "unverifiable",
+    "quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-1",
+    "title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 49,
+   "type": "edge_add",
+   "payload": {
+    "id": "e19",
+    "source": "ev-11",
+    "target": "arg-4",
+    "kind": "supports"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 50,
+   "type": "stance",
+   "payload": {
+    "agent": "bear",
+    "stance": "hold",
+    "reason": "The cited sources still favour my side.",
+    "round": 2,
+    "argument_id": "arg-4",
+    "stage": "premise",
+    "side_now": "bear"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 51,
+   "type": "status",
+   "payload": {
+    "agent": "factchecker",
+    "message": "Checking 11 quotes against their claims",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 52,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-1",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 53,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-2",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 54,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-3",
+    "factcheck": "mismatched",
+    "status": "UNVERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 55,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-4",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 56,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-5",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 57,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-6",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 58,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-7",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 59,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-8",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 60,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-9",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 61,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-10",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 62,
+   "type": "status",
+   "payload": {
+    "evidence_id": "ev-11",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 63,
+   "type": "status",
+   "payload": {
+    "agent": "judge",
+    "message": "Scoring verified evidence",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 64,
+   "type": "status",
+   "payload": {
+    "agent": "judge",
+    "message": "Anti-neutral rule: re-prompting the Judge once",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 65,
+   "type": "node_add",
+   "payload": {
+    "id": "verdict-premise",
+    "kind": "verdict",
+    "label": "Premise: REFUTED",
+    "stage": "premise"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 66,
+   "type": "verdict",
+   "payload": {
+    "stage": "premise",
+    "node_id": "verdict-premise",
+    "verdict": {
+     "label": "REFUTED",
+     "bull_total": 4.0,
+     "bear_total": 9.33,
+     "gap": 5.33,
+     "confidence": 0.872,
+     "rationale": "[fake LLM] Bull's verified sources scored 4.0 and Bear's 9.33 on the rubric. Rubric: Bull 4/12 vs Bear 9.33/12 (gap 5.33), confidence 0.87.",
+     "verdict_changers": [
+      "A recent official statistic that directly measures the claim.",
+      "An independent study contradicting the leading side's sources."
+     ],
+     "override": false
+    }
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 67,
+   "type": "edge_add",
+   "payload": {
+    "id": "e20",
+    "source": "claim",
+    "target": "verdict-premise",
+    "kind": "verdict"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  },
+  {
+   "seq": 68,
+   "type": "status",
+   "payload": {
+    "agent": "judge",
+    "message": "Writing the final report",
+    "stage": "final"
+   },
+   "ts": "2026-09-29T07:43:30+00:00"
+  }
+ ],
+ "report": {
+  "input_text": "The Great Wall of China is visible from the Moon with the naked eye",
+  "input_type": "assumption",
+  "premise_verdict": {
+   "label": "REFUTED",
+   "bull_total": 4.0,
+   "bear_total": 9.33,
+   "gap": 5.33,
+   "confidence": 0.872,
+   "rationale": "[fake LLM] Bull's verified sources scored 4.0 and Bear's 9.33 on the rubric. Rubric: Bull 4/12 vs Bear 9.33/12 (gap 5.33), confidence 0.87.",
+   "verdict_changers": [
+    "A recent official statistic that directly measures the claim.",
+    "An independent study contradicting the leading side's sources."
+   ],
+   "override": false
+  },
+  "causes": [],
+  "evidence": [
+   {
+    "id": "ev-1",
+    "side": "bull",
+    "claim_text": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "source_url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 0,
+    "recency": 0
+   },
+   {
+    "id": "ev-2",
+    "side": "bull",
+    "claim_text": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "source_url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 2,
+    "recency": 2
+   },
+   {
+    "id": "ev-3",
+    "side": "bull",
+    "claim_text": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data and grew 43% last year.",
+    "source_url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "mismatched",
+    "status": "UNVERIFIED",
+    "source_tier": null,
+    "recency": null
+   },
+   {
+    "id": "ev-4",
+    "side": "bear",
+    "claim_text": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye argues the opposite of the common assumption.",
+    "source_url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--0",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye argues the opposite of the common assumption.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 1,
+    "recency": 0
+   },
+   {
+    "id": "ev-5",
+    "side": "bear",
+    "claim_text": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "source_url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--1",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 3,
+    "recency": 3
+   },
+   {
+    "id": "ev-6",
+    "side": "bear",
+    "claim_text": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "source_url": "https://offline.invalid/gov/the-great-wall-of-china-is-visible-from--2",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "A 2025 academic study of The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 3,
+    "recency": 3
+   },
+   {
+    "id": "ev-7",
+    "side": "bull",
+    "claim_text": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "source_url": "https://offline.invalid/unknown/the-great-wall-of-china-is-visible-from--1",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "An undated forum summary on The Great Wall of China is visible from the Moon with the naked eye study repeats the claim without data.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 0,
+    "recency": 0
+   },
+   {
+    "id": "ev-8",
+    "side": "bull",
+    "claim_text": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "source_url": "https://offline.invalid/news/the-great-wall-of-china-is-visible-from--2",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "A 2024 news analysis of The Great Wall of China is visible from the Moon with the naked eye study finds support for the claim.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 2,
+    "recency": 2
+   },
+   {
+    "id": "ev-9",
+    "side": "bear",
+    "claim_text": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye statistics argues the opposite of the common assumption.",
+    "source_url": "https://offline.invalid/blog/the-great-wall-of-china-is-visible-from--2",
+    "source_title": "[FAKE OFFLINE SOURCE] The Great Wall of China is visible from the Moon with the na",
+    "retrieved_quote": "A 2019 company blog post on The Great Wall of China is visible from the Moon with the naked eye statistics argues the opposite of the common assumption.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 1,
+    "recency": 0
+   },
+   {
+    "id": "ev-10",
+    "side": "bear",
+    "claim_text": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "source_url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-0",
+    "source_title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the",
+    "retrieved_quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 3,
+    "recency": 3
+   },
+   {
+    "id": "ev-11",
+    "side": "bear",
+    "claim_text": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "source_url": "https://offline.invalid/gov/evidence-against-the-great-wall-of-china-1",
+    "source_title": "[FAKE OFFLINE SOURCE] evidence against The Great Wall of China is visible from the",
+    "retrieved_quote": "A 2025 academic study of evidence against The Great Wall of China is visible from the Moon with the naked eye finds evidence against the claim.",
+    "retrieved_at": "2026-09-29T07:43:30+00:00",
+    "factcheck": "verified",
+    "status": "VERIFIED",
+    "source_tier": 3,
+    "recency": 3
+   }
+  ],
+  "arguments": [
+   {
+    "id": "arg-1",
+    "agent": "bull",
+    "round": 1,
+    "text": "[fake LLM] Round 1: 2 retrieved source(s) suggest the claim holds.",
+    "evidence_ids": [
+     "ev-1",
+     "ev-2",
+     "ev-3"
+    ],
+    "stance": "hold",
+    "stance_reason": "The cited sources still favour my side."
+   },
+   {
+    "id": "arg-2",
+    "agent": "bear",
+    "round": 1,
+    "text": "[fake LLM] Round 1: 3 retrieved source(s) suggest the claim does not hold.",
+    "evidence_ids": [
+     "ev-4",
+     "ev-5",
+     "ev-6"
+    ],
+    "stance": "hold",
+    "stance_reason": "The cited sources still favour my side."
+   },
+   {
+    "id": "arg-3",
+    "agent": "bull",
+    "round": 2,
+    "text": "[fake LLM] Round 2: 2 retrieved source(s) suggest the claim holds.",
+    "evidence_ids": [
+     "ev-7",
+     "ev-8"
+    ],
+    "stance": "concede",
+    "stance_reason": "Only 2 of 12 sources favour my side."
+   },
+   {
+    "id": "arg-4",
+    "agent": "bear",
+    "round": 2,
+    "text": "[fake LLM] Round 2: 3 retrieved source(s) suggest the claim does not hold.",
+    "evidence_ids": [
+     "ev-9",
+     "ev-10",
+     "ev-11"
+    ],
+    "stance": "hold",
+    "stance_reason": "The cited sources still favour my side."
+   }
+  ],
+  "questions_to_ask": [
+   "[fake LLM] Which primary data source measures this claim directly for your market?",
+   "[fake LLM] What result would make you abandon this assumption?",
+   "[fake LLM] Which UNVERIFIED claim matters most to your decision, and who can confirm it?"
+  ],
+  "cost": {
+   "llm_calls": 21,
+   "tokens": null,
+   "seconds": 0.01,
+   "retrieval_queries": 5,
+   "llm_provider": "fake",
+   "retrieval_provider": "fake",
+   "retrieval_errors": 0,
+   "warnings": []
+  }
+ }
+}
