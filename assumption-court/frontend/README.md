@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Assumption Court: frontend
 
-## Getting Started
-
-First, run the development server:
+Next.js (App Router) + React Flow + Tailwind v4. See the project README for the full picture.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+NEXT_PUBLIC_API_BASE=http://localhost:8000 npm run dev   # http://localhost:3000
+npm run build && npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `lib/usePlayback.ts`: the single paced queue. Live polling (`GET /trial/{id}` every 1.5 s) and example replay both
+  enqueue backend `GraphEvent`s here, and each dequeued event updates:
+  - `lib/scene.ts`: courtroom scene (who speaks, walks, concedes; exhibits and stamps; transcript; ruling)
+  - `lib/graphState.ts`: React Flow nodes/edges for the evidence graph
+- `lib/types.ts` mirrors `backend/app/models.py` and the event payloads in `backend/app/graph_events.py`.
+- `components/pixel/`: 16×16 pixel sprites drawn as SVG rects (no image assets); animation is CSS in `app/globals.css`.
+- `public/examples/`: static copies of the cached trials, so replay works with the backend down
+  (regenerate with `backend/scripts/generate_cached_cases.py`).

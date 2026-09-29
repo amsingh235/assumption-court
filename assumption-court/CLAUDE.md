@@ -20,23 +20,32 @@ The git root is the **parent** directory (`/home/user/repo`), and the project li
 - Resume: read `BUILD.md` and `PROGRESS.md`, run `git log --oneline`, then continue from the first phase not marked DONE.
 - P1 hard-stops if `.env` is missing or `GEMINI_API_KEY` is invalid. Copy `.env.example` to `.env` first. `GEMINI_MODEL` must come from env and must never be hardcoded.
 
-## Commands (once scaffolded per §B.10)
+## Commands
 
 ```bash
-# Backend (Python 3.11)
+# Backend (Python 3.11; venv at assumption-court/.venv)
 pip install -r backend/requirements.txt
-uvicorn app.main:app --reload --port 8000          # run from backend/
-cd backend && pytest                                # all tests (backend/pytest.ini sets pythonpath + markers)
-cd backend && pytest -m "not network and not llm"   # offline tests only
-cd backend && pytest tests/test_rubric.py::test_name # single test
-# LLM_PROVIDER=fake gives deterministic canned responses (no API key needed).
+cd backend && uvicorn app.main:app --reload --port 8000
+cd backend && LLM_PROVIDER=fake RETRIEVAL_PROVIDER=fake uvicorn app.main:app --port 8000   # fully offline
+cd backend && pytest -m "not network and not llm"    # offline suite (pytest.ini sets pythonpath + markers)
+cd backend && pytest tests/test_rubric.py::test_decisive_needs_gap_and_two_verified_items   # single test
+cd backend && python scripts/generate_cached_cases.py  # regenerate cached_cases/ + frontend/public/examples/
 
-# Frontend
-cd frontend && npm install && npm run dev           # npm run build = P6 acceptance check
+# Frontend (Next 16: read node_modules/next/dist/docs before using unfamiliar APIs, per frontend/AGENTS.md)
+cd frontend && npm install && npm run dev
+cd frontend && npm run lint && npm run build
 
-# Eval (the human runs the full set; the build runs only the 10-claim smoke test)
-python eval/run_eval.py --all
+# Eval (the human runs the full set)
+python eval/fetch_fever.py && python eval/run_eval.py --all && python eval/run_eval.py --summary
 ```
+
+`LLM_PROVIDER=fake` (`backend/app/fake_llm.py`) and `RETRIEVAL_PROVIDER=fake` are deterministic stand-ins, keyed by prompt name. When you add a prompt, add a handler there too or fake mode breaks. The test suite forces both (`tests/conftest.py`).
+
+## Architecture across files
+
+- **Pipeline:** `app/pipeline/build.py` (LangGraph: classify → premise trial → cause trials → final) calls `researcher.py`, `debaters.py`, `factcheck.py` and `judge.py`. They share a mutable `Trial` (`pipeline/state.py`) and emit `GraphEvent`s via `graph_events.py`. `main.py` runs `run_trial` in a background task and appends the events to the polled `TrialJob`.
+- **Event stream = UI contract:** the payload shapes are documented in the `graph_events.py` docstring and mirrored in `frontend/lib/types.ts`. The frontend has one paced queue, `frontend/lib/usePlayback.ts`, fed by live polling and by example replay. Each dequeued event updates two pure reducers: `lib/scene.ts` (pixel courtroom and transcript) and `lib/graphState.ts` (React Flow graph). A new event type needs handling in both.
+- Evidence nodes are emitted *before* fact-checking with `status=None` (pending). A later `status` event with `evidence_id` sets VERIFIED/UNVERIFIED.
 
 ## Invariants that span multiple files (never violate)
 
