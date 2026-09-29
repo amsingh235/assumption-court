@@ -12,7 +12,7 @@ from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import CACHED_CASES_DIR, get_settings
-from app.llm import QuotaExhausted
+from app.llm import LLMNotConfigured, QuotaExhausted
 from app.models import GraphEvent, TrialJob, TrialRequest
 from app.pipeline.build import run_trial
 from app.pipeline.state import TrialTimeout
@@ -75,6 +75,9 @@ def run_job(job_id: str, text: str) -> None:
         job.status = "done"
     except QuotaExhausted:
         job.error = "The free LLM quota is exhausted right now. Try an example instead."
+        job.status = "error"
+    except LLMNotConfigured as exc:
+        job.error = f"The court has no LLM configured: {exc}. Replay an example meanwhile."
         job.status = "error"
     except TrialTimeout:
         job.error = f"The trial took longer than {get_settings().trial_timeout_s}s and was stopped. Try an example."

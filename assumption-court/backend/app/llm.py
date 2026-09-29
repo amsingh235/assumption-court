@@ -25,6 +25,10 @@ class LLMError(RuntimeError):
     pass
 
 
+class LLMNotConfigured(LLMError):
+    """Missing key/model for the selected provider. Safe to show to the user."""
+
+
 class QuotaExhausted(LLMError):
     """Provider returned HTTP 429 after retries. The API surfaces this as 'try an example'."""
 
@@ -64,7 +68,7 @@ def _gemini_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], 
 
     s = get_settings()
     if not s.gemini_api_key or not s.gemini_model:
-        raise LLMError("GEMINI_API_KEY and GEMINI_MODEL must be set (or use LLM_PROVIDER=fake)")
+        raise LLMNotConfigured("GEMINI_API_KEY and GEMINI_MODEL must be set (or use LLM_PROVIDER=fake)")
     client = genai.Client(api_key=s.gemini_api_key)
     config = types.GenerateContentConfig(
         temperature=0.2,
@@ -91,7 +95,7 @@ def _gemini_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], 
 def _ollama_generate(prompt: str, json_mode: bool) -> tuple[str, Optional[int], str]:
     s = get_settings()
     if not s.ollama_model:
-        raise LLMError("OLLAMA_MODEL must be set when LLM_PROVIDER=ollama")
+        raise LLMNotConfigured("OLLAMA_MODEL must be set when LLM_PROVIDER=ollama")
     body: dict[str, Any] = {"model": s.ollama_model, "prompt": prompt, "stream": False}
     if json_mode:
         body["format"] = "json"

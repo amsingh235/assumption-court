@@ -49,3 +49,11 @@ def test_examples_lists_cached_cases():
     assert isinstance(cases, list)
     for case in cases:
         assert {"id", "title", "events", "report"} <= case.keys()
+
+
+def test_missing_key_error_is_explained(settings_env):
+    settings_env(LLM_PROVIDER="gemini", GEMINI_API_KEY="", GEMINI_MODEL="")
+    c = client()
+    job_id = c.post("/trial", json={"text": "anything at all"}).json()["job_id"]
+    job = c.get(f"/trial/{job_id}").json()
+    assert job["status"] == "error" and "GEMINI_API_KEY" in job["error"]
