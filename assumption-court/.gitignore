@@ -16,3 +16,4 @@ eval/results.jsonl
 frontend/out/
 frontend/test-results/
 frontend/playwright-report/
+eval/citation_grades.jsonl
